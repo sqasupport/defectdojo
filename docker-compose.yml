@@ -20,12 +20,12 @@ services:
       - defectdojo_media:/usr/share/nginx/html/media
     ports:
       - target: 8080
-        published: ${DD_PORT:-8080}
+        published: ${DD_PORT:-18080}
         protocol: tcp
         host_ip: 127.0.0.1
         mode: host
       - target: 8443
-        published: ${DD_TLS_PORT:-8443}
+        published: ${DD_TLS_PORT:-18443}
         protocol: tcp
         host_ip: 127.0.0.1
         mode: host
